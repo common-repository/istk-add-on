@@ -1,0 +1,68 @@
+//設定ページ
+.istk-ao-settings-row{
+	
+	@media screen and ( min-width:900px ) {
+		display: flex;
+		justify-content: space-between;
+		
+		.istk-ao-options{
+			flex-basis: calc( 100% - 300px );
+		}
+		.istk-ao-settings-side{
+			flex-basis: 270px;
+		}
+	}
+	.istk-ao-settings-side{
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		
+		.postbox{
+			.postbox-header{
+				h2{
+					margin: 0;
+					font-size: 14px;
+					font-weight: 600;
+					padding: 8px 12px;
+					
+					.dashicons{
+						font-size: 1em;
+						height: 1em;
+						width: 1em;
+						margin-right: 0.2em;
+					}
+				}
+			}
+			.inside{
+				margin-bottom: 0;
+			}
+		}
+		.button-primary{
+			width: 100%;
+			text-align: center;
+			line-height: 1.2;
+			font-weight: bold;
+			min-height: 1em;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		
+		
+		//ボックス別
+		.note{
+			.img{
+				text-align: center;
+				img{
+					max-width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+
+}

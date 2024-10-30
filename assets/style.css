@@ -1,0 +1,122 @@
+.portfolio-categories {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding: 0;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-categories {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-categories li {
+    flex-basis: 33.3%;
+  }
+  .portfolio-categories.count1, .portfolio-categories.count2, .portfolio-categories.count3, .portfolio-categories.count4 {
+    flex-wrap: nowrap;
+  }
+  .portfolio-categories.count1 li, .portfolio-categories.count2 li, .portfolio-categories.count3 li, .portfolio-categories.count4 li {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+}
+.portfolio-categories > li {
+  margin: 8px 0;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+.portfolio-categories > li a {
+  text-decoration: none;
+  display: flex;
+  height: 75px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #222;
+  color: inherit;
+  border-radius: 8px;
+  background: #ccc;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-categories > li a:hover {
+    border-color: #936B6B;
+    transition: all 0.15s ease-in;
+  }
+  .portfolio-categories > li a:hover .title span {
+    text-decoration: underline;
+  }
+}
+.portfolio-categories > li a img {
+  position: relative;
+  z-index: 1;
+  width: 110%;
+  height: auto;
+  max-width: none;
+}
+.portfolio-categories > li a .title {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.36+41,0.87+63,0.95+100 */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0.36) 41%, rgba(255, 255, 255, 0.87) 63%, rgba(255, 255, 255, 0.95) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0.36) 41%, rgba(255, 255, 255, 0.87) 63%, rgba(255, 255, 255, 0.95) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0.36) 41%, rgba(255, 255, 255, 0.87) 63%, rgba(255, 255, 255, 0.95) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cffffff', endColorstr='#f2ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+.portfolio-categories > li a .title:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 3px;
+  top: 0;
+  background: rgba(255, 255, 255, 0.6);
+  /* z-index: 7; */
+  width: 100%;
+  left: 0;
+}
+.portfolio-categories > li a .title span {
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#side .widget > ul, #side .widget > nav > ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#side .widget > ul > li:before, #side .widget > nav > ul > li:before {
+  font-family: dashicons;
+  display: inline-block;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  vertical-align: top;
+  text-align: center;
+  content: "\f139";
+  opacity: 0.4;
+}
